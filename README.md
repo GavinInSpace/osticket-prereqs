@@ -50,10 +50,24 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <p>
   Installing PHP should be pretty straight forward (it will make later steps easier if you save it to its own file on your (:C) drive) and after its finished we can move on to downloading and installing MySQL which will create a database on your computer(this will help with saving customers/accounts/tickets/etc). This will require creating login credentials for MySQL, make sure not to forget them! After you've installed MySQL and PHP you must register PHP inside of IIS (Internet Information Services).
 </p>
-
-  To do this we go to the start menu on our machine and type in IIS in the search bar. Instead of simply clicking IIS we must right click and "run as administrator". Once you've done this you will see PHP manager as well as the rewrite programs we downloaded earlier, navigate to PHP manager. You will see a link labeled "register php version" and once you click it you will be asked to provide the path to the file in which you downloaded PHP. Use the path to PHP.CGI folder that we downloaded earlier. It is good practice to now restart IIS. Once these steps are completed we are finally ready to download OsTicket.
-
+<br />
 <p>
-  
+  To do this we go to the start menu on our machine and type in IIS in the search bar. Instead of simply clicking IIS we must right click and "run as administrator". Once you've done this you will see PHP manager as well as the rewrite programs we downloaded earlier, navigate to PHP manager. You will see a link labeled "register php version" and once you click it you will be asked to provide the path to the file in which you downloaded PHP. Use the path to PHP.CGI folder that we downloaded earlier. It is good practice to now restart IIS. Once these steps are completed we are finally ready to download OsTicket.
 </p>
 <br />
+
+![image](https://github.com/GavinInSpace/osticket-prereqs/assets/153689700/285cee53-ceb5-4f37-b1c4-76c09376d193)
+
+<p>
+  Go to the download link on the osticket site which will redirect you to github. Once at github download the zip file. Navigate to the upload folder found inside of the zip file that you downloaded and drag it into your c:\inetpub\wwwroot folder and rename the upload folder "osTicket". Once thats done you can go to your IIS manager and navigate to the "Sites" tab and find osTicket and open it to get to the osTicket installation screen.
+</p>
+<br />
+
+![image](https://github.com/GavinInSpace/osticket-prereqs/assets/153689700/ca9ebea8-299a-42cc-aaf2-c236441adf13)
+
+<p>
+  Your screen may not have as many prereqs checked off as in the above screenshot, but they can be activated via the IIS manager. Enable all of these extensions. Once this is done we have to go back to the wwwroot file and find os-sample-config.php and rename it to os-config.php. After renaming it right click the file and give everyone permissions inside of the properties. 
+  Congratulations! After setting your database and login information you have succesfully downloaded osTicket!
+</p>
+
+
