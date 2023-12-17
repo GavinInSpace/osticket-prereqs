@@ -68,6 +68,8 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <p>
   Your screen may not have as many prereqs checked off as in the above screenshot, but they can be activated via the IIS manager. Enable all of these extensions. Once this is done we have to go back to the wwwroot file and find os-sample-config.php and rename it to os-config.php. After renaming it right click the file and give everyone permissions inside of the properties. 
   Congratulations! After setting your database and login information you have succesfully downloaded osTicket!
+
+  Notes: You can use a service like HeidiSQL to have a user interface for your database, making it much easier to create your initial database. This is as simple as downloading/installing heidiSQL and creating a database with the same name (osTicket). Thank you for reading this far, if ive made any errors please send me an email at gavinisworkingnow@gmail.com and I will get it straightened out ASAP, thanks! 
 </p>
 
 
